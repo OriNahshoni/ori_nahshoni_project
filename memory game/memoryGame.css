@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  margin: 0;
+}
+h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: greenyellow;
+  background-color: purple;
+  display: block;
+  width: max-content;
+  padding: 5px;
+  margin: 15px auto;
+  border: 5px double greenyellow;
+  border-radius: 10px;
+}
+#turnsLeft {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: greenyellow;
+  background-color: purple;
+  display: block;
+  width: max-content;
+  padding: 5px;
+  margin: 0px auto;
+  border: 5px double greenyellow;
+  border-radius: 10px;
+}
+.tiles {
+  margin: 30px auto;
+  width: max-content;
+  display: grid;
+  grid-template-columns: repeat(4, 10vw);
+  gap: 16px;
+}
+.tile {
+  height: 12vh;
+  background-color: black;
+  border: 10px double #444444;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: rgb(50, 50, 93) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.832) 0px 30px 60px -30px,
+    rgb(10, 37, 64) 0px -2px 6px 0px inset;
+}
+#btn {
+  display: block;
+  margin: 5px auto;
+  width: 8vw;
+  height: 6vh;
+  border: 5px double greenyellow;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: purple;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+#btn:hover {
+  background-color: purple;
+  color: greenyellow;
+}
+@media (min-width: 250px) and (max-width: 480px) {
+  body {
+    background: rgb(34, 193, 195);
+    background: linear-gradient(
+      0deg,
+      rgba(34, 193, 195, 1) 0%,
+      rgba(253, 187, 45, 1) 100%
+    );
+    margin: 0;
+  }
+  h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: greenyellow;
+    background-color: purple;
+    display: block;
+    width: max-content;
+    padding: 5px;
+    margin: 15px auto;
+    border: 5px double greenyellow;
+    border-radius: 10px;
+  }
+  #turnsLeft {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: greenyellow;
+    background-color: purple;
+    display: block;
+    width: max-content;
+    padding: 5px;
+    margin: 0px auto;
+    border: 5px double greenyellow;
+    border-radius: 10px;
+  }
+  .tiles {
+    margin: 20px auto;
+    width: max-content;
+    display: grid;
+    grid-template-columns: repeat(5, 15vw);
+    gap: 16px;
+  }
+  .tile {
+    height: 10vh;
+    background-color: black;
+    border: 10px double #444444;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  #btn {
+    display: block;
+    margin: 0 auto;
+    width: 35vw;
+    height: 6vh;
+    border: 5px double greenyellow;
+    background-color: purple;
+    color: greenyellow;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+}

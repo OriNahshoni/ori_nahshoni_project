@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Game</title>
+    <link rel="stylesheet" href="math.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Math Game</h1>
+        <div>
+            <label for="minNumber">Min Number:</label>
+            <input type="number" id="minNumber" min="1">
+        </div>
+        <div>
+            <label for="maxNumber">Max Number:</label>
+            <input type="number" id="maxNumber" min="1">
+        </div>
+        <button id="startGame">Start Game</button>
+        <button id="clearResults">Clear Results</button>
+        <div id="problem" style="display: none;"></div>
+        <input type="text" id="userAnswer" placeholder="Your Answer" style="display: none;">
+        <button id="checkAnswer" style="display: none;">Check Answer</button>
+        <p id="result" class="result"></p>
+        <div id="savedResults" class="result"></div>
+    </div>
+    <script src="math.js"></script>
+</body>
+
+</html>

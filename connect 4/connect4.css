@@ -1,0 +1,128 @@
+body {
+  text-align: center;
+  justify-content: center;
+  background-image: url(./assets/trees.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Amatic SC", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-size: 6rem;
+  margin: 20px;
+  color: rgb(159, 252, 9);
+  font-family: "Amatic SC", cursive;
+  font-weight: 900;
+  background-color: rgba(25, 98, 163, 0.721);
+  border-radius: 25%;
+  padding: 15px;
+}
+#scores {
+  text-align: center;
+  font-size: 2.7rem;
+  font-weight: 900;
+  color: #f8faf9;
+  display: block;
+  height: 10vh;
+  width: max-content;
+  padding: 10px;
+  background-color: rgba(25, 98, 163, 0.721);
+  line-height: 2;
+  border-radius: 30px;
+  margin-bottom: 80px;
+}
+.board-container {
+  border: 10px solid #2b0fb5;
+  background-color: #4c8278be;
+  border-radius: 30px;
+  display: inline-block;
+  margin-top: -60px;
+}
+
+.game-wrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 60px);
+  grid-gap: 15px;
+  justify-content: center;
+  padding: 15px;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #2b0fb5;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.cell.empty {
+  background-color: #ccccccbb;
+}
+
+.cell.red {
+  background-color: red;
+  border-color: #7b0606;
+}
+
+.cell.yellow {
+  background-color: yellow;
+  border-color: #7b7906;
+}
+
+button#playAgainBtn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px 5px;
+  background-color: #220c39e4;
+  border: 10px solid #2b0fb5;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 2.8rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  font-family: "Bungee Spice", cursive;
+  color: rgb(159, 252, 9);
+}
+
+button#playAgainBtn:hover {
+  background-color: #0056b3;
+}
+
+@media (min-width: 250px) and (max-width: 480px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .board-container {
+    border: 8px solid #2b0fb5;
+    margin-top: -20px;
+  }
+
+  .game-wrapper {
+    grid-template-columns: repeat(7, 10vw);
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+  .cell {
+    width: 4vw;
+    height: 2.5vh;
+    border: 3px solid #2b0fb5;
+    padding: 10px;
+  }
+
+  button#playAgainBtn {
+    font-size: 2rem;
+    margin-top: 20px;
+    border: 8px solid #2b0fb5;
+  }
+}

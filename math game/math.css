@@ -1,0 +1,141 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./assets/mathWall.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 50vw;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #7dcac99e;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: #333;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+input[type="number"],
+input[type="text"] {
+  width: 20vw;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 20px;
+  font-size: 1.2rem;
+}
+#problem {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+button {
+  width: 10vw;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 20px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.result {
+  font-size: 1.7rem;
+  color: #010f01;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+#savedResults {
+  margin-top: 20px;
+  text-align: left;
+  background: #007bff9e;
+  width: max-content;
+  padding: 5px;
+  border-radius: 5%;
+}
+
+#savedResults p {
+  margin: 5px 0;
+  font-size: 2rem;
+  color: #000800;
+}
+
+#clearResults {
+  background-color: #ff5733;
+}
+
+#clearResults:hover {
+  background-color: #e6451f;
+}
+/* Media Query for screens smaller than 768px (typical phone screens) */
+@media screen and (max-width: 800px) {
+  body {
+    background: rgb(131, 103, 143);
+    background: linear-gradient(
+      90deg,
+      rgba(131, 103, 143, 1) 16%,
+      rgba(121, 208, 205, 1) 60%,
+      rgba(0, 212, 255, 1) 100%
+    );
+  }
+  .container {
+    max-width: 70vw;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  label {
+    font-size: 1.2rem;
+  }
+
+  input[type="number"],
+  input[type="text"] {
+    width: 50vw;
+    font-size: 1rem;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .result {
+    font-size: 1.3rem;
+  }
+
+  #savedResults p {
+    font-size: 1.2rem;
+  }
+}
