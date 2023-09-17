@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 6</title>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        .backr {
+            width: 1920px;
+            height: 590px;
+            display: block;
+            margin: 0 auto;
+            background-image: url(./images/Pathm.png);
+            background-repeat: no-repeat;
+            background-position: top left;
+            background-attachment: fixed;
+        }
+
+        #theForm {
+            width: 500px;
+            height: 600px;
+            background-color: #1A1A1AD4;
+            color: white;
+            position: absolute;
+            top: 157px;
+            right: 200px;
+            text-align: right;
+            direction: rtl;
+
+        }
+
+        #theForm h1 {
+            display: block;
+            width: 413px;
+            text-align: center;
+            font-size: 2.20rem;
+            font-weight: 900;
+            font-family: Heebo;
+            margin: 0 auto;
+            margin-top: 75px;
+        }
+
+        #theForm p {
+            display: block;
+            width: 413px;
+            text-align: center;
+            font-size: 1.25rem;
+            font-family: Heebo;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+
+        #theForm form {
+            display: block;
+            width: 413px;
+            margin: 0 auto;
+            margin-top: 20px;
+            font-size: 1.25rem;
+            font-weight: normal;
+            font-family: Heebo;
+        }
+
+        #theForm form input {
+            border-radius: 0;
+            height: 50px;
+            border: 1px solid #D31C75;
+        }
+
+        #theForm form label {
+            padding-top: 22px;
+        }
+
+        #theForm form #btn {
+            border-radius: 0;
+            width: 166px;
+            height: 50px;
+            margin-top: 20px;
+            background-color: #D31C75;
+            border: 1px solid #D31C75;
+            font-size: 1.375rem;
+            font-weight: bold;
+            font-family: Heebo;
+        }
+
+        @media only screen and (min-width: 250px) and (max-width: 480px) {
+            .backr {
+                width: 100%;
+                background-image: url(./images/pathR.png);
+                background-repeat: no-repeat;
+                background-position: top left;
+                background-attachment: fixed;
+            }
+
+            #theForm {
+                width: 300px;
+                height: 480px;
+                top: 89px;
+                left: 30px;
+                right: 30px;
+                background-color: #1A1A1AD4;
+                color: white;
+                display: block;
+                margin: 0 auto;
+                text-align: right;
+                direction: rtl;
+
+            }
+
+            #theForm h1 {
+                display: block;
+                width: 200px;
+                text-align: center;
+                font-size: 2rem;
+                font-weight: 900;
+                font-family: Heebo;
+                margin: 0 auto;
+                margin-top: 40px;
+            }
+
+            #theForm p {
+                display: block;
+                width: 230px;
+                text-align: center;
+                font-size: 1rem;
+                font-family: Heebo;
+                margin: 0 auto;
+                margin-top: 10px;
+            }
+
+            #theForm form {
+                display: block;
+                width: 230px;
+                margin: 0 auto;
+                margin-top: 20px;
+                font-size: 1rem;
+                font-weight: normal;
+                font-family: Heebo;
+            }
+
+            #theForm form input {
+                border-radius: 0;
+                height: 30px;
+                border: 1px solid #D31C75;
+            }
+
+            #theForm form label {
+                padding-top: 22px;
+            }
+
+            #theForm form #btn {
+                border-radius: 0;
+                width: 100px;
+                height: 35px;
+                margin-top: 20px;
+                background-color: #D31C75;
+                border: 1px solid #D31C75;
+                font-size: 1rem;
+                font-weight: bold;
+                font-family: Heebo;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="backr">
+    </div>
+    <section id="theForm">
+        <h1>תן לנו להוביל אותך קדימה</h1>
+        <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכ.</p>
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">שם מלא</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">אימייל</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-primary" id="btn">שליחה</button>
+        </form>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

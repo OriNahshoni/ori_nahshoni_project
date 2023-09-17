@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+}
+
+.container {
+    display: flex;
+    width: 98vw;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.img {
+    height: 100vh;
+    width: 60vw;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+
+h1 {
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 20px;
+    color: #70d3e9;
+    font-family: Press+Start+2;
+    font-size: 4.5rem;
+    direction: rtl;
+
+}
+
+p {
+    margin-top: 20px;
+    margin-left: 110px;
+    margin-right: 110px;
+    font-family: Heebo;
+    font-size: 1.3rem;
+    color: #70d3e9;
+    direction: rtl;
+    
+}
+
+.fun img{
+    height: 5rem;
+    width: 5rem;
+}
+
+.fun img:hover {
+            transform: translate(0, -10px);
+            transition: all 0.5s ease-in-out;
+        }
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+label {
+    color: #70d3e9;
+    font-family: Heebo;
+    font-weight:bold;
+    font-size: 1rem;
+    direction: rtl;
+    
+}
+
+
+input {
+    width: 418px;
+    height: 50px;
+    background: #E5EEFF;
+    opacity: 1;
+    border-bottom: 4px solid #70d3e9;
+    margin-top: 5px;
+}
+
+button {
+    width: 166px;
+    height: 50px;
+    background: #70d3e9;
+    font-family: Heebo;
+    font-size: 1rem;
+    font-weight: bold;
+    opacity: 1;
+    color: white;
+    margin-left: auto;
+    margin-top: 32px;
+}
+
+@media (min-width:250px) and (max-width:480px) {
+    .container {
+    flex-wrap: wrap;
+    }
+
+    .img {
+    height: auto;
+    width: 100%;
+    }
+
+    h1 {
+    margin-top: 50px;
+    font-size: 2rem;
+    width:90vw;
+    display: block;
+    text-align: center;
+    }
+
+    p {
+    font-size: 1rem;
+    width: 90vw;
+    }
+
+    .fun img{
+    height: 3rem;
+    width: 3rem;
+}
+
+    input {
+    width: 80vw;
+    }
+
+    button {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
+    width: 80vw;
+    }
+
+}
