@@ -1,0 +1,132 @@
+body {
+  text-align: center;
+  align-items: center;
+  background-image: url(./assets/colors.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
+  background-attachment: fixed;
+}
+h1 {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 4rem;
+  color: #d7ed93;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  display: block;
+  height: 15vh;
+  width: 28vw;
+  background-color: #160454;
+  margin: 20px auto;
+  line-height: 2;
+  border-radius: 30px;
+}
+#scores {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 2.7rem;
+  color: #d7ed93;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  display: block;
+  height: 10vh;
+  width: 12vw;
+  background-color: #160454;
+  margin: 20px auto;
+  line-height: 2;
+  border-radius: 30px;
+}
+.game-wrapper {
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.4rem;
+  width: 40vw;
+  height: 60vh;
+}
+.game-wrapper > div {
+  width: 100%;
+  height: 100%;
+  background-color: #d6ed938d;
+  border-radius: 15px;
+  line-height: 1.7;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 6rem;
+  font-weight: bold;
+  color: #160454;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.522) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.41) 0px 4px 6px,
+    rgba(0, 0, 0, 0.48) 0px 12px 13px, rgba(0, 0, 0, 0.583) 0px -3px 5px;
+}
+#playAgainBtn {
+  background-color: #d7ed93;
+  font-size: 2rem;
+  height: 8vh;
+  width: 15vw;
+  border-radius: 10px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  cursor: pointer;
+}
+#playAgainBtn:hover {
+  background-color: #5fb8ff;
+}
+@media (min-width: 250px) and (max-width: 480px) {
+  #scores {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2rem;
+    color: #d7ed93;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    display: block;
+    height: 7vh;
+    width: 70vw;
+    background-color: #160454;
+    margin: 20px auto;
+    line-height: 2;
+    border-radius: 30px;
+  }
+  h1 {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    display: block;
+    height: 9vh;
+    width: 80vw;
+    background-color: #160454;
+    margin: 20px auto;
+    line-height: 2.4;
+    border-radius: 30px;
+  }
+  .game-wrapper {
+    width: 65vw;
+    height: 45vh;
+  }
+
+  .game-wrapper > div {
+    width: 100%;
+    height: 100%;
+    background-color: #d6ed93b0;
+    line-height: 1.5;
+    font-weight: 900;
+    font-size: 5rem;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    cursor: pointer;
+  }
+
+  #playAgainBtn {
+    background-color: #d7ed93;
+    font-size: 1.2rem;
+    height: 8vh;
+    width: 40vw;
+    border-radius: 10px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    cursor: pointer;
+  }
+  #playAgainBtn:hover {
+    background-color: #5fb8ff;
+  }
+}

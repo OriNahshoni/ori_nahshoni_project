@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(./assets/wood.jpg);
+}
+.container {
+  position: relative;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container .box {
+  position: relative;
+  width: 38.6vw;
+  background: #afaeae99;
+  padding: 20px;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10%;
+}
+.container .box h2 {
+  font-size: 2.9rem;
+  font-weight: 500;
+  color: #0d056b;
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+.container .box #grocery {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.container .box #grocery input {
+  background: #93d4c8;
+  position: relative;
+  width: 40%;
+  padding: 10px;
+  border: 1px solid #333;
+  outline: none;
+  border-radius: 5%;
+}
+.container .box #grocery button {
+  background: #4e988a;
+  color: #fff;
+  min-width: 100px;
+  width: 20%;
+  font-weight: 500;
+  border: 1px solid #000d0e;
+  cursor: pointer;
+  outline: none;
+  border-radius: 8%;
+  margin: 2px;
+}
+.container .box #grocery button:hover {
+  background: #333;
+  color: #0f9179;
+}
+.container ol {
+  position: relative;
+  padding: 10px 20px 10px 40px;
+  width: 100%;
+  min-height: 600px;
+  background: #afaeae99
+    repeating-linear-gradient(
+      transparent 0%,
+      transparent 95%,
+      #000 99%,
+      #000 100%
+    );
+  background-size: 50px 50px;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 3%;
+}
+.container ol li {
+  position: relative;
+  font-size: 1.5rem;
+  height: 50px;
+}
+
+.container ol li .remove {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+@media (min-width: 250px) and (max-width: 480px) {
+  .container {
+    width: 100vw;
+    height: 90vh;
+  }
+  .container .box {
+    width: 94vw;
+  }
+  .container .box h2 {
+    font-size: 1.7rem;
+  }
+  .container .box #grocery input {
+    width: 40vw;
+  }
+  .container .box #grocery button {
+    min-width: 50px;
+    font-size: 1.2rem;
+  }
+  .container ol {
+    min-height: auto;
+    width: 94vw;
+    height: 90vh;
+  }
+  .container ol li {
+    font-size: 1.2rem;
+  }
+  .container ol li .remove {
+    right: -10px;
+  }
+}
