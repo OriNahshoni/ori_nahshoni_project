@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    width: 98vw;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.img {
+    height: 100vh;
+    width: 60vw;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+
+h1 {
+    display: block;
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-right: 20px;
+    color: #020253;
+    font-family: Heebo;
+    font-weight:bold;
+    font-size: 3rem;
+    direction: rtl;
+
+}
+
+p {
+    display: block;
+    margin-top: 20px;
+    margin-left: 110px;
+    margin-right: 240px;
+    font-family: Heebo;
+    font-size: 1.3rem;
+    color: #020253;
+    direction: rtl;
+    
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+label {
+    color: black;
+    font-family: Heebo;
+    font-weight:bold;
+    font-size: 1rem;
+    direction: rtl;
+    
+}
+
+
+input {
+    width: 418px;
+    height: 50px;
+    background: #E5EEFF;
+    opacity: 1;
+    border: 1px solid white;
+    border-bottom: 4px solid #020253;
+    margin-top: 5px;
+}
+
+button {
+    width: 166px;
+    height: 50px;
+    background: #020253;
+    font-family: Heebo;
+    font-size: 1rem;
+    font-weight: bold;
+    opacity: 1;
+    color: white;
+    margin-left: auto;
+    margin-top: 32px;
+}
+
+@media (min-width:250px) and (max-width:480px) {
+    .container {
+    flex-wrap: wrap;
+    }
+
+    .img {
+    height: auto;
+    width: 102%;
+    display: block;
+    margin: 0 auto;
+    }
+
+    h1 {
+    margin-top: 50px;
+    font-size: 2rem;
+    width:80vw;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    }
+
+    p {
+    font-size: 1rem;
+    width: 80vw;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    }
+
+    input {
+    width: 80vw;
+    height: 5vh;
+    }
+
+    button {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
+    width: 80vw;
+    height: 5vh;
+    }
+
+}

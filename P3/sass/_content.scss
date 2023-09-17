@@ -1,0 +1,26 @@
+ #coverI {
+   width: 100vw;
+ height: 70vh;
+    }
+    h1{
+        color: $bgColor;
+        font-size: $bigSize;
+        font-weight: bold;
+        font-family: Assistant;
+        text-align: center;
+    }
+    p{
+      color: $pColor;
+        font-size: $regularSize;
+        font-weight: 400;
+        font-family: Assistant; 
+        text-align: center; 
+        direction: rtl;
+    }
+    .container{
+        display: block;
+        margin: 0 auto;
+        margin-top: -50vh;
+        
+    }
+

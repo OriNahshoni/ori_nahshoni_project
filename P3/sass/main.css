@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#coverI {
+  width: 100vw;
+  height: 70vh;
+}
+
+h1 {
+  color: #D3E10E;
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: Assistant;
+  text-align: center;
+}
+
+p {
+  color: #F9F9F9;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: Assistant;
+  text-align: center;
+  direction: rtl;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+  margin-top: -50vh;
+}
+
+form {
+  color: #011560;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: Assistant;
+  direction: rtl;
+  display: block;
+  margin-top: 40vh;
+  display: flex;
+  justify-content: center;
+}
+form label {
+  margin-left: 18px;
+}
+form input {
+  background-color: #F6F6F6;
+  border: 1px solid white;
+  border-bottom: 4px solid #D3E10E;
+  height: 5vh;
+  width: 19vw;
+  margin-left: 18px;
+}
+form #btn {
+  color: #011560;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: #D3E10E;
+  height: 5vh;
+  width: 8vw;
+}
+
+@media (min-width: 250px) and (max-width: 480px) {
+  #coverI {
+    width: 100vw;
+    height: 45vh;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .container {
+    margin-top: -35vh;
+    margin-right: 6vw;
+    margin-left: 6vw;
+  }
+  form {
+    width: 90vw;
+    font-size: 1rem;
+    margin-top: 30vh;
+    flex-direction: column;
+    justify-content: center;
+  }
+  form div {
+    display: flex;
+    flex-direction: column;
+  }
+  form input {
+    width: 80vw;
+    margin-bottom: 20px;
+    background-color: #E5EEFF;
+  }
+  form #btn {
+    width: 80vw;
+  }
+}/*# sourceMappingURL=main.css.map */

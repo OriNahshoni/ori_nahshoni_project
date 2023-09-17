@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+.container {
+  width: 100%;
+  height: 45px;
+  background-color: rgba(118, 188, 224, 0.569);
+  position: fixed;
+  top: 0;
+}
+
+.profile img {
+  width: 37px;
+  height: 37px;
+  border-radius: 20px;
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 15px;
+  border: 4px double #011560;
+}
+
+.profile h2 {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 70px;
+  text-align: center;
+  color: white;
+  font-size: 1.3rem;
+  font-family: tahoma;
+  font-weight: 200;
+  line-height: 2.2;
+}
+.one {
+  width: 100%;
+  height: min-content;
+  background: #8fb5b52e;
+  padding-bottom: 10px;
+}
+
+.one h1 {
+  text-align: center;
+  color: rgb(20, 8, 128);
+  font-size: 3rem;
+  font-family: tahoma;
+  margin-top: 70px;
+}
+
+.one p {
+  text-align: center;
+  color: black;
+  font-size: 1.4rem;
+  text-align: center;
+  font-family: tahoma;
+  direction: rtl;
+  width: 80vw;
+  margin: 20px auto;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.btn1 {
+  background-color: rgb(153, 201, 225);
+  width: 270px;
+  height: min-content;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  color: black;
+  font-size: 1.2rem;
+  font-family: tahoma;
+  font-weight: normal;
+  border: 1px solid #ffffff;
+  text-decoration: none;
+}
+
+.btn1:hover {
+  background-color: rgb(20, 8, 128);
+  color: white;
+  border: 1px solid rgb(245, 240, 244);
+  cursor: pointer;
+}
+
+.logos {
+  width: 100%;
+  height: 9vh;
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: 0 4px 8px 0 rgb(153, 201, 225);
+}
+
+.logos a img {
+  height: 8vh;
+  width: 4.5vw;
+}
+
+.coffe {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  height: 6vh;
+  width: 100%;
+  background-color: rgb(20, 8, 128);
+  color: white;
+  font-family: tahoma;
+  text-align: center;
+  padding-top: 10px;
+  border-bottom: 3px solid aqua;
+}
+
+@media (min-width: 250px) and (max-width: 480px) {
+  .one {
+    height: min-content;
+    width: 90vw;
+    margin: 15px;
+    padding: 15px;
+  }
+  .one h1 {
+    font-size: 2.2rem;
+  }
+  .one p {
+    font-size: 1.3rem;
+    width: 84vw;
+  }
+
+  .btn1 {
+    width: 150px;
+  }
+
+  .logos {
+    width: 100vw;
+    height: 6vh;
+    display: block;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .logos a img {
+    height: 5vh;
+    width: 12vw;
+  }
+
+  .coffe img {
+    width: 90vw;
+    height: 40vh;
+  }
+}

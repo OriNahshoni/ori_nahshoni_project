@@ -1,0 +1,31 @@
+form{
+     color: $bColor;
+        font-size: $smallSize;
+        font-weight: bold;
+        font-family: Assistant; 
+        direction: rtl;
+        display: block;
+        margin-top: 40vh;
+        display: flex;
+        justify-content: center;
+        label{
+          margin-left: 18px;  
+        }
+        input{
+
+        background-color: #F6F6F6;
+        border: 1px solid white;
+        border-bottom: 4px solid $bgColor;
+        height: 5vh;
+        width: 19vw;
+        margin-left: 18px;
+        }
+        #btn{
+color: $bColor;
+font-weight: bold;
+font-size: $regularSize;
+background-color: $bgColor;
+height: 5vh;
+width: 8vw;
+        }
+}

@@ -1,0 +1,40 @@
+@media (min-width:250px) and (max-width:480px){
+#coverI {
+   width: 100vw;
+ height: 45vh;
+}
+ h1{   
+        font-size: $resSize1;  
+    }
+    p{
+        font-size: $resSize2;
+    }
+    .container{
+        margin-top: -35vh;
+        margin-right: 6vw;
+        margin-left: 6vw;
+        
+    }
+
+form{
+        width: 90vw;
+        font-size: $resSize2;
+        margin-top: 30vh;
+        flex-direction: column;
+        justify-content: center;
+        div{
+            display: flex;
+            flex-direction: column;
+        }
+
+        input{
+width: 80vw;
+margin-bottom: 20px;
+background-color: #E5EEFF;
+        }
+        #btn{
+width: 80vw;
+        }
+}
+
+}
