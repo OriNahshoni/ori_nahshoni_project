@@ -18,7 +18,7 @@ window.addEventListener("load", () => {
   };
 
   // Function to create a new list item with a remove button
-  function createListItem(text) {
+ const createListItem=(text)=> {
     const newElm = document.createElement("li");
     newElm.innerHTML = text;
     newElm.className = "list-group-item";

@@ -34,7 +34,7 @@ window.addEventListener("load", () => {
     location.reload();
   };
 
-  function control(e) {
+  const control = (e) => {
     // Changing velocity value based on key press
     if (e.keyCode === 38 && velocityY != 1) {
       velocityX = 0;
@@ -49,7 +49,7 @@ window.addEventListener("load", () => {
       velocityX = 1;
       velocityY = 0;
     }
-  }
+  };
   document.addEventListener("keyup", control);
 
   topBtn.addEventListener("click", () => {
